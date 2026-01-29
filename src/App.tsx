@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter, Routes, Route, Link } from 'react-router-dom';
 import { Home } from './pages/Home';
 
 const About = () => (
@@ -17,7 +17,7 @@ const About = () => (
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen w-full bg-gray-100 flex flex-col">
         <nav className="bg-gray-800 text-white p-4 shadow-md flex gap-6 justify-center">
           <Link to="/" className="hover:text-blue-400 font-medium transition">Zadania</Link>
@@ -31,7 +31,7 @@ function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
